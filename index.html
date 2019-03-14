@@ -1,0 +1,32 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Game Project Shell</title>
+    <script type="text/javascript" src="http://24.16.255.56:8888/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div id="menu">
+<h3>Conway's Game of Life</h3>
+
+<p>After starting you may increase or decrease the speed of the animation in addition to colors. <br>
+    The following displays a Gosper Gun, Pentadecathlon, Blinker2, Beacon, and a Monogram. <br>Selected save to 
+    save the current state of the board. Click load to continue the most recently saved state. 
+</p>
+
+ <button id="start" type="button">Start</button>
+ <button id="speedUp" type="button">+</button>
+ <button id="slowDown" type="button">-</button>
+ <button id="color" type="button">Color</button>
+ <button id="save" type="button">Save</button>
+ <button id="load" type="button">Load</button>
+</div>
+<canvas id="gameWorld" tabindex="1" width="1000" height="800" style="border: 1px solid black; background: rgb(7, 66, 121)">
+
+    </canvas>
+<script type="text/javascript" src="./main.js"></script>
+<script type ="text/javascript" src="./gameengine.js"></script>
+</body>
+</html>
+
